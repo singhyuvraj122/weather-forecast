@@ -1,0 +1,97 @@
+
+.main-cont{
+  margin: 20px auto;
+  min-width: 250px;
+  max-width: 428px;
+  height: 80vh;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px 2px rgb(61, 61, 61);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-cont-head{
+  height: 50%;
+  background-image: url(../assets/landscape-1844230__340.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-cont-head-city{
+  color: white;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.sub-cont-head-temp{
+  color: white;
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+.sub-cont-foot{
+  height: 50%;
+  background: rgb(91, 54, 221);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+  color: white;
+  padding: 10px;
+}
+
+.box-item-1, .box-item-2{
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-cont-foot-head{
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0px 0px 10px 0px;
+}
+
+.sub-cont-foot-body{
+  height: calc(100% - 30px);
+  background-color: rgb(122, 94, 223);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box-item-1, .box-item-2{
+  display: flex;
+}
+
+.sub-box{
+  flex-grow: 1;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.sub-box img{
+  width: 50%;
+  height: 95%;
+}
+
+.sub-box span {
+  width: 50%;
+  text-align: center;
+}
+
+@media screen and (max-width: 428px){
+  .main-cont{
+    max-width: 100vw;
+    height: 90vh;
+  }
+}
