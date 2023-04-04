@@ -1,25 +1,33 @@
 <div class="main-cont">
   <div class="sub-cont-head">
-    <div class="sub-cont-head-city">Wellington</div>
-    <div class="sub-cont-head-temp">20 C</div>
+    <div class="sub-cont-head-city">{{ data?.name || "pune" | titlecase }}</div>
+    <div class="sub-cont-head-temp">{{ data?.main?.temp }}</div>
   </div>
   <div class="sub-cont-foot">
     <h1 class="sub-cont-foot-head">More Information</h1>
     <div class="sub-cont-foot-body">
       <div class="box-item-1">
         <div class="sub-box">
-          <img src="../assets/cold-temperature-icon-14.jpg" /><span>19 C</span>
+          <img src="../assets/cold-temperature-icon-14.jpg" /><span>{{
+            data?.main?.temp_min
+          }}</span>
         </div>
         <div class="sub-box">
-          <img src="../assets/thermometer-svgrepo-com.svg" /><span>20 C</span>
+          <img src="../assets/thermometer-svgrepo-com.svg" /><span
+            >{{ data?.main?.temp_max }} C</span
+          >
         </div>
       </div>
       <div class="box-item-2">
         <div class="sub-box">
-          <img src="../assets/humidity.svg" /><span>85%</span>
+          <img src="../assets/humidity.svg" /><span>{{
+            data?.main?.humidity
+          }}</span>
         </div>
         <div class="sub-box">
-          <img src="../assets/wind.svg" /><span>11.83</span>
+          <img src="../assets/wind.svg" /><span
+            >{{ data?.wind?.speed }} km/hr</span
+          >
         </div>
       </div>
     </div>
